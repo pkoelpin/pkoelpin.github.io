@@ -1,7 +1,11 @@
-title: aero structures
+title: Aluminum Overcast
 permalink: /blog/:year/:month/:day/
 email: phil.koelpin@gmail.com
 description: Aerospace Structures Blog
 github_username:  pkoelpin
-theme: minima
 highlighter: rouge
+theme: null
+collections:
+  references:
+    output: true
+    sort_by: title

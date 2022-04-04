@@ -1,0 +1,22 @@
+---
+title: References
+layout: default
+---
+<article class="references">
+    <h2>{{page.title}}</h2>
+    <ul class="ref-list">
+      {% for reference in site.references %}
+        <li class="ref-list__item">
+          <img class="ref-image" src="/assets/images/{{reference.image}}"></img> 
+          <a class="ref-title" href="{{ reference.url }}">{{ reference.title }}</a>
+          <ul class="ref-author-list">
+            {% for author in reference.author %}
+            <li class="ref-author">
+                {{author}}
+            </li>
+            {% endfor %}
+          </ul>
+        </li>
+      {% endfor %}
+    </ul>
+  </article>

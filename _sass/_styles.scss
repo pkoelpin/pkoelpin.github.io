@@ -1,0 +1,114 @@
+body {
+    max-width: 700px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    margin: 0 auto;
+    padding-right: 1em;
+    padding-left: 1em;
+    font-size: large;
+  }
+  
+.header {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 50px 50px;
+    white-space: nowrap;
+
+    &__image {
+        grid-column: 1;
+        grid-row: 1 / 3;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    &__site-title {
+        grid-column: 2;
+        grid-row: 1;
+        display: block;
+        font-size: 2em;
+        line-height: 50px;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+
+    a, a:visited {
+        color: inherit;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.nav {
+    grid-column: 2;
+    grid-row: 2;
+    line-height: 50px;
+    a, a:visited {
+        color: inherit;
+        text-decoration: none;
+        align-content: center;
+    }
+}
+
+.about {
+    img {
+        border-radius: 25%;
+        padding: 10px;
+    }
+}
+
+.main {
+    display: block;
+    margin: auto auto auto auto;
+    max-width: 700px;
+    overflow-wrap: break-word;
+    text-align: justify;
+}
+
+.ref-list__item {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 50px auto;
+}
+
+.ref-image {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.ref-title {
+    grid-column: 2;
+}
+
+.ref-author-list {
+    grid-column: 2;
+    display: inline;
+    list-style: none;
+}
+
+.ref-author {
+    display: inline;
+
+}
+
+.ref-author-list li::after {
+    content: ",";
+}
+
+.ref-author-list li:last-child::after {
+    content: "";
+}
+
+.footer {
+    display: block;
+    text-align: center;
+    color: Gray;
+    margin: 1em auto 1em auto;
+}

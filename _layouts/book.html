@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<article class="references">
+    <h2>{{page.title}}</h2>
+    {{ content }}
+    <h2>Table of Contents</h2>
+    <ol class="toc">
+        {% for chapter in page.toc %}
+        <li class="toc-chapter">
+            {{chapter}}
+        </li>
+        {% endfor %}
+      </ul>
+</article>

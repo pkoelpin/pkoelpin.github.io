@@ -1,0 +1,44 @@
+<svg viewBox="-50 0 100 100" 
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <style>
+        path {fill: black;}
+        ellipse {fill: black;}
+        rect {fill: black;}
+        @media (prefers-color-scheme: dark) {
+            path { fill: white; }
+            ellipse { fill: white; }
+            rect { fill: white; }
+        }
+    </style>
+    <!-- <rect x="-50" width="100%" height="100%" fill="red"/> -->
+    <g transform="rotate(-45, 0, 50) translate(0,12) scale (1.25) ">
+        <ellipse cx="0" cy="16" rx="4" ry="16"   /> <!-- Nose -->
+        <path d="M 0 15
+                 L -46, 22 
+                 C -50 22.66 -50 26 -50 26 
+                 C -50 26 -50 29.4 -46 30 
+                 L 1 35" /> <!-- Left Wing -->
+        <path d="M 0, 15
+                 L 46, 22 
+                 C 50 22.66 50 26 50 26 
+                 C 50 26 50 29.4 46 30 
+                 L -1 35" /> <!-- Right Wing -->
+        <path d="M -4, 34 -1.5 73 1.5 73 4 34" /> <!-- Fuselage -->
+        <path d="M 0 56 
+                 L -19 61
+                 C -21 61.6 -21 63.5 -21 63.5
+                 C -21 63.5 -21 65.7 -19 66 
+                 L 0 67" /> <!-- Left Stabilizer -->
+        <path d="M 0 56 
+                 L 19 61
+                 C 21 61.6 21 63.5 21 63.5
+                 C 21 63.5 21 65.7 19 66 
+                 L 0 67" /> <!-- Right Stabilizer -->
+        <ellipse cx="0" cy="73" rx="1.5" ry="1" /> <!-- Tail -->
+        <rect x="-24" y="13" height="10" width="5" rx="1" />     <!-- Engine -->
+        <rect x="-13" y="11" height="10" width="5" rx="1" />     <!-- Engine -->
+        <rect x="19" y="13" height="10" width="5" rx="1" />     <!-- Engine -->
+        <rect x="8" y="11" height="10" width="5" rx="1" />     <!-- Engine -->
+    </g>
+</svg>
