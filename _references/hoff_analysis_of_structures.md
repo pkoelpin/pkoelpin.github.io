@@ -1,8 +1,9 @@
 ---
 layout: book
 title: The Analysis of Structures
-author: Nicholas J. Hoff
+author: [Nicholas Hoff]
 year: 1956
+publisher: Wiley
 image: analysis_of_structures.jpg
 toc:
     - The Principle of Virtual Displacements

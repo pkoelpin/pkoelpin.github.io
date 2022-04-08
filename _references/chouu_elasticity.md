@@ -1,8 +1,9 @@
 ---
 layout: book
 title: "Elasticity: Tensor, Dyadic, and Engineering Approaches"
-author: [Pei Chi Chou, Nicholas J. Pagano]
+author: [Pei Chou, Nicholas Pagano]
 year: 1967
+publisher: Dover 
 image: elasticity_chou.jpg
 toc:
     - Analysis of Stress

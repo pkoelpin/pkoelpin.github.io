@@ -1,8 +1,9 @@
 ---
 layout: book
 title: Theory and Analysis of Flight Structures
-author: Robert M. Rivello
+author: [Robert Rivello]
 year: 1969
+publisher: McGraw-Hill 
 image: flight_structures_rivello.jpg
 toc:
     - Introduction

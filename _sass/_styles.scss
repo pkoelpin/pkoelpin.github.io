@@ -69,42 +69,31 @@ body {
     text-align: justify;
 }
 
-.ref-list__item {
-    display: grid;
-    grid-template-columns: 100px 1fr;
-    grid-template-rows: 50px auto;
+.works-cited {
+    padding-inline-start: 0px;
 }
 
-.ref-image {
-    grid-column: 1;
-    grid-row: 1 / 3;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 10px;
+.works-cited__item {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
 }
 
-.ref-title {
-    grid-column: 2;
+.works-cited__link {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
-.ref-author-list {
-    grid-column: 2;
-    display: inline;
-    list-style: none;
+.works-cited__citation {
+    text-align: left;
+    text-indent: -2em;
+    padding-left: 2em;
 }
 
-.ref-author {
-    display: inline;
-
-}
-
-.ref-author-list li::after {
-    content: ",";
-}
-
-.ref-author-list li:last-child::after {
-    content: "";
-}
 
 .footer {
     display: block;

@@ -1,8 +1,10 @@
 ---
 layout: book
-title: Theory of Elasticity (3rd Edition)
+title: Theory of Elasticity
 author: [Stephen P. Timoshenko, J. N. Goodier]
 year: 1970
+version: 3rd ed.
+publisher: McGraw-Hill
 image: theory_of_elasticity.jpg
 toc:
     - Introduction

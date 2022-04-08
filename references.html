@@ -2,21 +2,40 @@
 title: References
 layout: default
 ---
-<article class="references">
+<article>
     <h2>{{page.title}}</h2>
-    <ul class="ref-list">
-      {% for reference in site.references %}
-        <li class="ref-list__item">
-          <img class="ref-image" src="/assets/images/{{reference.image}}"></img> 
-          <a class="ref-title" href="{{ reference.url }}">{{ reference.title }}</a>
-          <ul class="ref-author-list">
-            {% for author in reference.author %}
-            <li class="ref-author">
-                {{author}}
-            </li>
-            {% endfor %}
-          </ul>
+    <ul class="works-cited">
+        {% for reference in site.references %}
+        <li class="works-cited__item">
+            <a class="works-cited__link" href="{{ reference.url }}">
+                <p class="works-cited__citation">
+                    {% if reference.author %} 
+                        {% assign split_name = reference.author[0] | split: ' ' %}
+                            {% if split_name.size == 2 %}
+                                {% assign first_name = split_name[0] %}
+                                {% assign last_name = split_name[1] %}
+                            {% else %}
+                                {% assign first_name = split_name | slice: 0, 2 | join: ' ' %}
+                                {% assign last_name = split_name[2] %}
+                            {% endif %}
+                        {% if reference.author.size == 1 %}
+                            {{ last_name }}, {{ first_name }}.
+                        {% elsif reference.author.size == 2 %}
+                            {{ last_name }}, {{ first_name }}
+                            and {{ reference.author[1] }}.
+                        {% else %}
+                            {{ last_name }}, {{ first_name }}, et al.
+                        {% endif %}
+                    {% endif %}
+                    {% if reference.title %} <em>{{ reference.title }}</em>. {% endif %}
+                    {% if reference.container %} {{ reference.container }}, {% endif %}
+                    {% if reference.version %} {{ reference.version }}, {% endif %}
+                    {% if reference.number %} {{ reference.number }}, {% endif %}
+                    {% if reference.publisher %} {{ reference.publisher }}, {% endif %}
+                    {% if reference.year %} {{ reference.year }}. {% endif %}
+                </p>
+            </a>
         </li>
-      {% endfor %}
+        {% endfor %}
     </ul>
-  </article>
+</article>
