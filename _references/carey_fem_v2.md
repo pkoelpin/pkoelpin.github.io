@@ -1,7 +1,7 @@
 ---
 layout: book
 title: "Finite Elements: A Second Course"
-number: Vol. II
+number: vol. II
 author: [Graham Carey, J. Oden]
 year: 1983
 publisher: Prentice-Hall

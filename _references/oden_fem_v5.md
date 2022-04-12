@@ -1,7 +1,7 @@
 ---
 layout: book
 title: "Finite Elements: Special Problems in Solid Mechanics"
-number: Vol. V
+number: vol. V
 author: [J. Tinsley Oden, Graham F. Carey]
 year: 1984
 publisher: Prentice-Hall

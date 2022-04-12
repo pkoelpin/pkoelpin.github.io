@@ -1,7 +1,7 @@
 ---
 layout: book
 title: "Finite Elements: An Introduction"
-number: Vol. I
+number: vol. I
 author: [Eric B. Becker, Graham Carey, J. Oden]
 year: 1981
 publisher: Prentice-Hall

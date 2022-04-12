@@ -3,20 +3,31 @@
 <head>
   <meta charset="utf-8">
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="shortcut icon" href="/assets/images/favicon.svg">
+  {% if page.usemath %}
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+      TeX: { equationNumbers: { autoNumber: "AMS" } }
+      });
+    </script>
+    <script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  {% endif %}
 </head>
 
 <header class="header">
-  <img class="header__image" src="/assets/images/favicon.svg"></img>
-  <h1 class="header__site-title"><a href="/">{{ site.title}}</a></h1>
-  <nav class="nav">
-    <a href="/about">About</a>
-    &nbsp;|&nbsp;
-    <a href="/index">Index</a>
-    &nbsp;|&nbsp;
-    <a href="/references">References</a>
-  </nav>
+  <img class="header__image" src="/assets/images/favicon.svg" decoding="async"></img>
+  <div class="header__title-nav">
+    <h1 class="header__site-title"><a href="/">{{ site.title}}</a></h1>
+    <nav class="nav">
+      <a href="/about">About</a>
+      &nbsp;|&nbsp;
+      <a href="/index">Index</a>
+      &nbsp;|&nbsp;
+      <a href="/references">References</a>
+    </nav>
+  </div>
 </header>
 
 <main class="main">

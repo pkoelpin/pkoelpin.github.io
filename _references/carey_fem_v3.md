@@ -1,7 +1,7 @@
 ---
 layout: book
 title: "Finite Elements: Computational Aspects"
-number: Vol. III
+number: vol. III
 author: [Graham F. Carey, J. Tinsley Oden]
 year: 1984
 publisher: Prentice-Hall

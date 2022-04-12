@@ -1,15 +1,15 @@
 ---
 layout: default
 ---
-<article class="references">
+<article class="reference">
     <h2>{{page.title}}</h2>
     {{ content }}
-    <h2>Table of Contents</h2>
+    <h3>Table of Contents</h3>
     <ol class="toc">
         {% for chapter in page.toc %}
         <li class="toc-chapter">
             {{chapter}}
         </li>
         {% endfor %}
-      </ul>
+    </ol>
 </article>

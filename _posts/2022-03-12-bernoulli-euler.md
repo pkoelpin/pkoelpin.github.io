@@ -1,11 +1,12 @@
 ---
 title:  "Bernoulli-Euler Beam Theory"
 layout: post
-typora-root-url: ..
+usemath: true
+typora-root-url: ../
 ---
 Bernoulli-Euler beam theory is the most common theory used to analyze straight beams. In this theory, the transverse shear strain is neglected, making the beam infinitely rigid in the transverse direction. Straight lines perpendicular to the beam axis before deformation remain (a) straight, (b) inextensible, and (c) perpendicular to the tangent line to the beam axis after deformation.
 
-![beam](/img/beam/beam.svg)
+![beam](/assets/images/beam.svg)
 
 The Euler-Bernoulli assumptions lead to the following displacement field:
 

@@ -1,7 +1,7 @@
 ---
 layout: book
 title: "Finite Elements: Fluid Mechanics"
-number: Vol. VI
+number: vol. VI
 author: [Graham F. Carey, J. Tinsley Oden]
 year: 1986
 publisher: Prentice-Hall

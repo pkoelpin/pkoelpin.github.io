@@ -1,6 +1,6 @@
 ---
 layout: book
-title: Theory of Plates and Shells (2nd Edition)
+title: Theory of Plates and Shells
 author: [Stephen P. Timoshenko, S. Woinowsky-Krieger]
 version: 2nd ed.
 year: 1959

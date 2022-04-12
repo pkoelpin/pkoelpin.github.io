@@ -21,18 +21,27 @@ layout: default
                         {% if reference.author.size == 1 %}
                             {{ last_name }}, {{ first_name }}.
                         {% elsif reference.author.size == 2 %}
-                            {{ last_name }}, {{ first_name }}
-                            and {{ reference.author[1] }}.
+                            {{ last_name }}, {{ first_name }} and {{ reference.author[1] }}.
                         {% else %}
                             {{ last_name }}, {{ first_name }}, et al.
                         {% endif %}
                     {% endif %}
-                    {% if reference.title %} <em>{{ reference.title }}</em>. {% endif %}
+                    {% if reference.layout == book %} 
+                        {% if reference.title %} <em>{{ reference.title }}</em>. {% endif %}
+                    {% else %}
+                        {% if reference.title %} "{{ reference.title }}". {% endif %}
+                    {% endif %}
                     {% if reference.container %} {{ reference.container }}, {% endif %}
                     {% if reference.version %} {{ reference.version }}, {% endif %}
                     {% if reference.number %} {{ reference.number }}, {% endif %}
                     {% if reference.publisher %} {{ reference.publisher }}, {% endif %}
-                    {% if reference.year %} {{ reference.year }}. {% endif %}
+                    {% if reference.page %} 
+                        {% if reference.year %} {{ reference.year }}, {% endif %}
+                        {{ reference.page }}. 
+                    {% else %}
+                        {% if reference.year %} {{ reference.year }}. {% endif %}
+                    {% endif %}
+
                 </p>
             </a>
         </li>
