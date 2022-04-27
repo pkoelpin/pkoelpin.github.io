@@ -11,6 +11,5 @@ toc:
   - Finite Element Approximation of Elliptic Boundary-Value Problems
   - Mixed Methods
   - Hybrid Methods
- 
 ---
 

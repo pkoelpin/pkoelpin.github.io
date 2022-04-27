@@ -16,7 +16,6 @@ v(x,y,z)=0\\
 w(x,y,z)=w(x)
 $$
 
-
 Where $$(u,v,w)$$ are the displacements of a point in the $$(x,y,z)$$ directions respectively. And the infinitesimal strains are:
 
 
